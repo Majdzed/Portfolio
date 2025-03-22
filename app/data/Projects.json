@@ -1,0 +1,33 @@
+[
+        {
+            "id": 1,
+            "title": "Edu+",
+            "description": "A website that helps students to find the best courses!.",
+            "fullDescription": "Edu + is a platform that offers you online or ofline courses in different fields and from different schools, there is something for everyone , make your choice and embark on a new adventure",
+            "technologies": ["Next/ts", "Node.js", "Express", "MongoDB" , "pwa" , "tailwindcss" , "e-payment (chargily)"],
+            "repository": "https://github.com/Abdousa23/Edu-plus",
+            "image": "https://edu-plus-nine.vercel.app/images/landing.svg",
+            "url": "https://edu-plus-nine.vercel.app/",
+            "available": true
+        },
+        {
+            "id": 2,
+            "title": "HeelSeek",
+            "description": "A website that helps patients to find the best doctors!.",
+            "fullDescription": "HeelSeek is a comprehensive online platform designed to bridge the gap between patients and healthcare providers. Whether you're a patient seeking a trusted doctor or a healthcare professional looking to manage your practice efficiently, HeelSeek offers a seamless, user-friendly experience tailored to your needs. With advanced search functionality, multilingual support, and robust appointment management, HeelSeek ensures that healthcare is accessible, transparent, and efficient for everyone.",
+            "image": "https://healseek.vercel.app/primaryLogo.svg",
+            "technologies": ["Next/ts", "Python", "FastApi" ,  "PostgreSQl" , "tailwindcss"],
+            "url": "https://healseek.vercel.app/en (it may take a while to load bcz of render)",
+            "available": false
+        },
+        {
+            "id": 3,
+            "title": "Gestion atelier",
+            "description": "A private website that helps a company to manage its workshop!.",
+            "fullDescription": "The Workshop Management System is a comprehensive, private web platform designed to streamline and optimize the operations of a company's workshop. This powerful tool enables efficient management of machines, repairs, and overall workshop activities through an intuitive and user-friendly interface.",
+            "technologies": ["react", "ts",  "Node.js", "Express", "MongoDB" , "tailwindcss"],
+            "image": "https://www.gmao.com/wp-content/uploads/pourquoi-mettre-en-place-un-plan-de-maintenance-preventive.svg",
+            "url": "None , it's a private project",
+            "available": true
+        }
+    ]
