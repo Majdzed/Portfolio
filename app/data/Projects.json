@@ -18,6 +18,7 @@
             "image": "https://healseek.vercel.app/primaryLogo.svg",
             "technologies": ["Next/ts", "Python", "FastApi" ,  "PostgreSQl" , "tailwindcss"],
             "url": "https://healseek.vercel.app/en (it may take a while to load bcz of render)",
+            "repository": "Access closed for now",
             "available": false
         },
         {
@@ -28,6 +29,7 @@
             "technologies": ["react", "ts",  "Node.js", "Express", "MongoDB" , "tailwindcss"],
             "image": "https://www.gmao.com/wp-content/uploads/pourquoi-mettre-en-place-un-plan-de-maintenance-preventive.svg",
             "url": "None , it's a private project",
+            "repository": "No access bcz it's private 🤷‍♂️",
             "available": true
         }
     ]
