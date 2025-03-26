@@ -19,17 +19,20 @@
             "technologies": ["Next/ts", "Python", "FastApi" ,  "PostgreSQl" , "tailwindcss"],
             "url": "https://healseek.vercel.app/en (it may take a while to load bcz of render)",
             "repository": "Access closed for now",
+            "repAvailable": false,
             "available": false
         },
         {
             "id": 3,
-            "title": "Gestion atelier",
+            "title": "Gestion-atelier",
             "description": "A private website that helps a company to manage its workshop!.",
             "fullDescription": "The Workshop Management System is a comprehensive, private web platform designed to streamline and optimize the operations of a company's workshop. This powerful tool enables efficient management of machines, repairs, and overall workshop activities through an intuitive and user-friendly interface.",
             "technologies": ["react", "ts",  "Node.js", "Express", "MongoDB" , "tailwindcss"],
             "image": "https://www.gmao.com/wp-content/uploads/pourquoi-mettre-en-place-un-plan-de-maintenance-preventive.svg",
             "url": "None , it's a private project",
             "repository": "No access bcz it's private 🤷‍♂️",
-            "available": true
+            "repAvailable": false,
+            "available": true,
+            "LinkAvailable": false
         }
     ]

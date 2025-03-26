@@ -4,6 +4,7 @@ import Projects from '../data/Projects.json';
 import GlowingBox from '../_components/GlowingBox';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaS } from 'react-icons/fa6';
 
 type Params = {
     params: Promise<{
@@ -11,15 +12,15 @@ type Params = {
     }>;
 };
 
-const Page = async ({ params}: Params) => {
+const Page = async ({ params }: Params) => {
     const projectId = await params
-    const id =  parseInt(projectId.projectId);
+    const id = parseInt(projectId.projectId);
 
     return (
-        
-        
+
+
         <div className="flex flex-col items-center justify-items-center min-h-screen pb-10 gap-10 scroll-smooth">
-        <Navbar />
+            <Navbar />
             <div className="flex flex-col items-center content-center justify-center mt-20 md:mt-60 space-y-8 md:space-y-16">
                 <div className="flex flex-col items-center content-center justify-center">
                     <h1 className="text-3xl md:text-4xl font-[family-name:var(--font-raleway)] font-semibold text-white text-center">
@@ -73,27 +74,47 @@ const Page = async ({ params}: Params) => {
                     {/* Project URL */}
                     <div className="text-2xl md:text-4xl font-[family-name:var(--font-raleway)] font-semibold text-white border-2 border-white p-4 text-center">
                         {Projects[id]?.title} URL:{' '}
-                        <a
-                            className="font-[family-name:var(--font-pixels)] text-blue-400 hover:text-blue-600"
-                            href={Projects[id]?.url}
-                        >
-                            {/* Show "Click here!" on small screens, full URL on larger screens */}
-                            <span className="sm:hidden">Click here!</span>
-                            <span className="hidden sm:inline">{Projects[id]?.url}</span>
-                        </a>
+                        {Projects[id]?.url && Projects[id]?.LinkAvailable !== false ? (
+                            <a
+                                className="font-[family-name:var(--font-pixels)] text-blue-400 hover:text-blue-600"
+                                href={Projects[id]?.url}
+                            >
+                                <span className="sm:hidden">Click here!</span>
+                                <span className="hidden sm:inline">{Projects[id]?.url}</span>
+                            </a>
+                        ) : (
+                            <div className='text-red-500'>
+                                <span className="sm:hidden">
+                                    Not Available
+                                </span>
+                                <span className="hidden sm:inline">
+                                    {Projects[id]?.url}
+                                </span>
+                            </div>
+                        )}
                     </div>
 
                     {/* GitHub Repo URL */}
                     <div className="text-2xl md:text-4xl font-[family-name:var(--font-raleway)] font-semibold text-white border-2 border-white p-4 text-center">
                         {Projects[id]?.title} GitHub Repo:{' '}
-                        <Link
-                            className="font-[family-name:var(--font-pixels)] text-blue-400 hover:text-blue-600"
-                            href={Projects[id]?.repository || '#'}
-                        >
-                            {/* Show "Click here!" on small screens, full URL on larger screens */}
-                            <span className="sm:hidden">Click here!</span>
-                            <span className="hidden sm:inline">{Projects[id]?.repository}</span>
-                        </Link>
+                        {Projects[id]?.repository && Projects[id]?.repAvailable !== false ? (
+                            <Link
+                                className="font-[family-name:var(--font-pixels)] text-blue-400 hover:text-blue-600"
+                                href={Projects[id]?.repository || '#'}
+                            >
+                                <span className="sm:hidden">Click here!</span>
+                                <span className="hidden sm:inline">{Projects[id]?.repository}</span>
+                            </Link>
+                        ) : (
+                            <div className='text-red-500'>
+                                <span className="sm:hidden">
+                                    Not Available
+                                </span>
+                                <span className="hidden sm:inline">
+                                    {Projects[id]?.repository}
+                                </span>
+                            </div>
+                        )}
                     </div>
                     <div className="flex  w-full justify-around content-center gap-4 md:gap-0 px-4 md:px-0">
                         {id > 0 && id <= Projects.length - 1 && (
