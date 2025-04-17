@@ -4,6 +4,7 @@ import Main from "./Features/Main";
 import Skills from "./Features/Skills";
 import Degrees from "./Features/Degrees";
 import Projects from "./Features/Projects";
+import React from "react";
 
 
 export default function Home() {

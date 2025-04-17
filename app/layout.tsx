@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import FallingStars from "./_components/FallingStars";
 
 import { Geist, Geist_Mono, IBM_Plex_Mono , Raleway } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import React from "react";
 
 const myFont = localFont({ 
   src: "./fonts/determinationmonoweb-webfont.woff2",  // Adjusted path
@@ -46,11 +48,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/elklb.webp" />
+        <link rel="icon" href="/elklb.webp" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${IbmMono.variable} ${raleway.variable} ${myFont.variable} antialiased`}
       >
+        <FallingStars 
+          starCount={75}
+          minSpeed={0.2}
+          maxSpeed={0.6}
+          minSize={1}
+          maxSize={3}
+        />
         {children}
       </body>
     </html>
