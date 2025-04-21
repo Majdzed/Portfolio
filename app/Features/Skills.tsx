@@ -11,6 +11,7 @@ const Skills = (props: Props) => {
     const nextXp = "I have developed high-performance frontend applications using Next.js, leveraging its server-side rendering (SSR) and static site generation (SSG) capabilities for fast load times and SEO optimization. My experience includes building responsive user interfaces, implementing dynamic routing, and integrating with RESTful APIs for seamless data fetching."
     const fastXP = "I have developed high-performance backend APIs using FastAPI , focusing on speed, scalability, and ease of use. My experience includes building RESTful APIs, implementing authentication, and integrating with databases like PostgreSQL and MongoDB."    
     const pyXp = "I have used Python for scripting,data-scrapping ,and backend development, including building APIs and working with data processing libraries. My experience also includes developing small-scale applications and tools to streamline workflows."
+    const Docker = "I have used Docker to containerize applications, ensuring consistent environments across development and production. My experience includes creating Dockerfiles, managing multi-container applications with Docker Compose, and deploying containers to cloud platforms."
     return (
         <div className='flex flex-col gap-46 my-4 p-6' id='MySkills'>
             <h1 className='mx-auto my-12 text-4xl flex flex-col items-center justify-center'>
@@ -26,6 +27,7 @@ const Skills = (props: Props) => {
             <SkillCards level={4} name={"React JS/TS"} filledColor={"bg-[#4782c9]"} descreption={nextXp} experience='1.2 years'/>
             <SkillCards level={3} name={"Fast API"} filledColor={"bg-[#4782c9]"} descreption={fastXP} experience='6 months'/>
             <SkillCards level={5} name={"Python"} filledColor={"bg-[#4782c9]"} descreption={pyXp} experience='2 years'/>
+            <SkillCards level={4} name={"Docker"} filledColor={"bg-[#4782c9]"} descreption={Docker} experience={'6 months'}/>
         </div>
         </div>
     )

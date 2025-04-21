@@ -39,7 +39,7 @@ const FallingStars: React.FC<FallingStarsProps> = ({
 
         // Set canvas to full screen
         const handleResize = () => {
-            canvas.width = window.innerWidth;
+            canvas.width = window.innerWidth
             canvas.height = window.innerHeight;
 
             // Initialize stars
