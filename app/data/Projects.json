@@ -12,15 +12,15 @@
         },
         {
             "id": 2,
-            "title": "HeelSeek",
+            "title": "HealSeek",
             "description": "A website that helps patients to find the best doctors!.",
-            "fullDescription": "HeelSeek is a comprehensive online platform designed to bridge the gap between patients and healthcare providers. Whether you're a patient seeking a trusted doctor or a healthcare professional looking to manage your practice efficiently, HeelSeek offers a seamless, user-friendly experience tailored to your needs. With advanced search functionality, multilingual support, and robust appointment management, HeelSeek ensures that healthcare is accessible, transparent, and efficient for everyone.",
+            "fullDescription": "HealSeek is a comprehensive online platform designed to bridge the gap between patients and healthcare providers. Whether you're a patient seeking a trusted doctor or a healthcare professional looking to manage your practice efficiently, HeelSeek offers a seamless, user-friendly experience tailored to your needs. With advanced search functionality, multilingual support, and robust appointment management, HeelSeek ensures that healthcare is accessible, transparent, and efficient for everyone.",
             "image": "https://healseek.vercel.app/primaryLogo.svg",
             "technologies": ["Next/ts", "Python", "FastApi" ,  "PostgreSQl" , "tailwindcss"],
-            "url": "https://healseek.vercel.app/en (it may take a while to load bcz of render)",
-            "repository": "Access closed for now",
-            "repAvailable": false,
-            "available": false
+            "url": "https://healseek.vercel.app/en",
+            "repository": "https://github.com/achrafness/HealSeek",
+            "repAvailable": true,
+            "available": true
         },
         {
             "id": 3,
