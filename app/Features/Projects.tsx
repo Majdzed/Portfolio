@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import GlowingBox from '../_components/GlowingBox'
-import ProjectsSlides from '../_components/ProjectsCarousel'
 import ProjectsCarousel from '../_components/ProjectsCarousel'
 
 type Props = {}
