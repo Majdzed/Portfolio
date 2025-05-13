@@ -20,6 +20,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* globals.css or a dedicated CSS file */
 .embla {
   position: relative;
@@ -42,4 +43,32 @@ body {
   position: relative;
   flex: 0 0 100%;
   min-width: 0;
+}
+
+/* Pixelated image rendering for 8-bit style */
+.image-rendering-pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Add this to make the carousel navigation buttons work properly */
+.carousel-button-fix {
+  pointer-events: all;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Pixelated image rendering for 8-bit style */
+.image-rendering-pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Add this to make the carousel navigation buttons work properly */
+.carousel-button-fix {
+  pointer-events: all;
+  cursor: pointer;
+  z-index: 10;
 }
