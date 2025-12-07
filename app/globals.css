@@ -72,3 +72,85 @@ body {
   cursor: pointer;
   z-index: 10;
 }
+
+/* 3D Certificate Carousel Styles */
+.perspective-container {
+  perspective: 1500px;
+  perspective-origin: center center;
+}
+
+.certificate-card-wrapper {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.certificate-card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.certificate-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-out;
+}
+
+/* Flip animations */
+.flip-next {
+  animation: flipNext 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flip-prev {
+  animation: flipPrev 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes flipNext {
+  0% {
+    transform: rotateY(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotateY(-90deg) scale(0.9);
+  }
+
+  100% {
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes flipPrev {
+  0% {
+    transform: rotateY(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotateY(90deg) scale(0.9);
+  }
+
+  100% {
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+/* Hover effect for certificate card */
+.certificate-card-wrapper:hover .certificate-card-inner {
+  transform: translateZ(20px);
+  box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
+}
+
+/* Dropdown animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}

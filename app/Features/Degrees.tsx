@@ -8,7 +8,7 @@ type Props = {};
 
 const Degrees = (props: Props) => {
     const deTxt =
-        "I am currently a 3rd-year student (L3) in Computer Science at ESTIN, Bejaia. As of now, I do not hold any official certificates apart from my upcoming L3 degree. My academic journey has equipped me with a strong foundation in programming, algorithms, and software development, which I continue to build upon through hands-on projects and self-learning.";
+        "I am currently a 4th-year student (Master 1) in AI Engineering at ESTIN, Bejaia. As of now, I hold an equivalent of a bachelor's degree in Computer Science, and I'm specializing in AI. My academic journey has equipped me with a strong foundation in programming, algorithms, and software development, which I continue to build upon through hands-on projects and self-learning.";
 
     const deTxtRef = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);

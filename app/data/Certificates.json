@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Coursera Certificate",
+        "issuer": "Coursera",
+        "date": "2025",
+        "image": "/cer1.png",
+        "pdf": "/certificates/Coursera TF7SE5AGIVUW.pdf"
+    },
+    {
+        "id": 2,
+        "title": "ASSOCIATE DATA ANALYST",
+        "issuer": "Datacamp",
+        "date": "2025",
+        "image": "/cer2.png",
+        "pdf": "/certificates/DAA0013021783734_2.pdf"
+    }
+]

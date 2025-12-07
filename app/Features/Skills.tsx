@@ -20,14 +20,14 @@ const Skills = (props: Props) => {
                 </div>
             </h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4'>
-            <SkillCards level={5} name={"javaScript"} filledColor={"bg-[#4782c9]"} descreption={jsDescrption} experience={"1.5 years"} />
-            <SkillCards level={4} name={"Express Js"} filledColor={"bg-[#4782c9]"} descreption={expressDescreption} experience='1.5 years'/>
-            <SkillCards level={4} name={"TypeScript"} filledColor={"bg-[#4782c9]"} descreption={tsXp} experience='1.2 years'/>
-            <SkillCards level={4} name={"Next JS/TS"} filledColor={"bg-[#4782c9]"} descreption={nextXp} experience='1.2 years'/>
-            <SkillCards level={4} name={"React JS/TS"} filledColor={"bg-[#4782c9]"} descreption={nextXp} experience='1.2 years'/>
-            <SkillCards level={3} name={"Fast API"} filledColor={"bg-[#4782c9]"} descreption={fastXP} experience='6 months'/>
-            <SkillCards level={5} name={"Python"} filledColor={"bg-[#4782c9]"} descreption={pyXp} experience='2 years'/>
-            <SkillCards level={4} name={"Docker"} filledColor={"bg-[#4782c9]"} descreption={Docker} experience={'6 months'}/>
+            <SkillCards level={5} name={"javaScript"} filledColor={"bg-[#4782c9]"} descreption={jsDescrption} experience={"3 years"} />
+            <SkillCards level={5} name={"Express Js"} filledColor={"bg-[#4782c9]"} descreption={expressDescreption} experience='3 years'/>
+            <SkillCards level={5} name={"TypeScript"} filledColor={"bg-[#4782c9]"} descreption={tsXp} experience='2 years and 6 months'/>
+            <SkillCards level={4} name={"Next JS/TS"} filledColor={"bg-[#4782c9]"} descreption={nextXp} experience='2 years and 6 months'/>
+            <SkillCards level={4} name={"React JS/TS"} filledColor={"bg-[#4782c9]"} descreption={nextXp} experience='3 years'/>
+            <SkillCards level={3} name={"Fast API"} filledColor={"bg-[#4782c9]"} descreption={fastXP} experience='1 year and 6 months'/>
+            <SkillCards level={5} name={"Python"} filledColor={"bg-[#4782c9]"} descreption={pyXp} experience='3 years'/>
+            <SkillCards level={4} name={"Docker"} filledColor={"bg-[#4782c9]"} descreption={Docker} experience={'1 year'}/>
         </div>
         </div>
     )
